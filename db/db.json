@@ -2,33 +2,38 @@
   "productos": [
     {
       "id": 1,
-      "nombre": "jabón",
+      "name": "jabón",
       "precio": "1000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
+      "stock":10
     },
     {
       "id": 2,
-      "nombre": "papel",
+      "name": "papel",
       "precio": "2000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
+      "stock":10
     },
     {
       "id": 3,
-      "nombre": "jabón axios",
+      "name": "jabón axios",
       "precio": "3000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
+      "stock":5
     },
     {
       "id": 4,
-      "nombre": "leche en polvo",
+      "name": "leche en polvo",
       "precio": "1500",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripcion elite. Ipsum, assumed!"
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripcion elite. Ipsum, assumed!",
+      "stock":1
     },
     {
       "id": 5,
-      "nombre": "azúcar",
+      "name": "azúcar",
       "precio": "3000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
+      "stock":0
     }
   ]
 }
