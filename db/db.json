@@ -1,19 +1,34 @@
 {
-  "publicaciones": [
+  "productos": [
     {
       "id": 1,
-      "título": "json-server",
-      " autor ": " typicode "
-    }
-  ],
-  " comentarios ": [
+      "nombre": "jabón",
+      "precio": "1000",
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+    },
     {
-      " id ": 1,
-      " body ": " algún comentario ",
-      " postId ": 1
+      "id": 2,
+      "nombre": "papel",
+      "precio": "2000",
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+    },
+    {
+      "id": 3,
+      "nombre": "jabón axios",
+      "precio": "3000",
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
+    },
+    {
+      "id": 4,
+      "nombre": "leche en polvo",
+      "precio": "1500",
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripcion elite. Ipsum, assumed!"
+    },
+    {
+      "id": 5,
+      "nombre": "azúcar",
+      "precio": "3000",
+      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!"
     }
-  ],
-  " perfil ": {
-    " nombre ": " typicode "
-  }
+  ]
 }
