@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "json-server": "json-server --watch db/db.json"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
