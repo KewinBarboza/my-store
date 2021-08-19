@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { List, ListItem } from '@chakra-ui/react'
+import { Center, List, ListItem, Textarea, Button, Input, Box, Grid, Stack } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import { useForm } from 'react-hook-form'
 
@@ -26,31 +26,37 @@ function App () {
 
   return (
     <div className='App'>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input placeholder='nombre' {...register('name', { required: true })} />
-        {errors.name && <span>el nombre es requerido</span>}
+      <Grid templateColumns='repeat(2, 1fr)' gap={3} padding='10'>
+        <Box maxW='sm' borderWidth='1px' borderRadius='lg' padding='10'>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Stack spacing={3}>
+              <Input placeholder='nombre' {...register('name', { required: true })} />
+              {errors.name && <span>el nombre es requerido</span>}
 
-        <input placeholder='precio' {...register('precio')} />
-        {errors.precio && <span>el precio del precio del productos es requerido</span>}
+              <Input placeholder='precio' {...register('precio')} />
+              {errors.precio && <span>el precio del precio del productos es requerido</span>}
 
-        <textarea placeholder='descripción' {...register('descripcion')} />
+              <Textarea placeholder='descripción' {...register('descripcion')} />
 
-        <button> guardar producto </button>
-      </form>
+              <Button> guardar producto </Button>
+            </Stack>
+          </form>
+        </Box>
 
-      {loading && <span>loading...</span>}
+        {loading && <span>loading...</span>}
 
-      {
-        !loading &&
-          <List spacing={3}>
-            {data && data.map(d => (
-              <ListItem spacing={3} key={d.id}>
-                <CheckCircleIcon mr={10} color='green.600' />
-                <span> <b>stock</b> {d.stock} - <b>nombre</b> {d.name} - Bs{d.precio} </span>
-              </ListItem>
-            ))}
-          </List>
-      }
+        {
+          !loading &&
+            <List spacing={3}>
+              {data && data.map(d => (
+                <ListItem spacing={3} key={d.id}>
+                  <CheckCircleIcon mr={10} color='green.600' />
+                  <span> <b>stock</b> {d.stock} - <b>nombre</b> {d.name} - Bs{d.precio} </span>
+                </ListItem>
+              ))}
+            </List>
+        }
+      </Grid>
     </div>
   )
 }
