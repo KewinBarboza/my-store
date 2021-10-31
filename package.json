@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "json-server": "json-server --watch db/db.json --port 4000"
+    "server": "json-server --watch db/db.json --port 4000"
   },
   "dependencies": {
     "@chakra-ui/icons": "1.0.15",

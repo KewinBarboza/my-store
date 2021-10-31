@@ -1,39 +1,850 @@
 {
   "productos": [
     {
-      "id": 1,
-      "name": "jabón",
-      "precio": "1000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
-      "stock":10
+      "id": 8,
+      "name": "Oven Mitts - 15 Inch",
+      "price": "287.94",
+      "description": "Sprain of other specified parts of right shoulder girdle",
+      "stock": 74,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
     },
     {
-      "id": 2,
-      "name": "papel",
-      "precio": "2000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
-      "stock":10
+      "id": 9,
+      "name": "Beef - Ground Lean Fresh",
+      "price": "503.93",
+      "description": "Infection and inflammatory reaction due to insulin pump",
+      "stock": 25,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
     },
     {
-      "id": 3,
-      "name": "jabón axios",
-      "precio": "3000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
-      "stock":5
+      "id": 10,
+      "name": "Crab - Dungeness, Whole, live",
+      "price": "537.61",
+      "description": "Drown due to being washed overboard from inflatbl crft, init",
+      "stock": 74,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
     },
     {
-      "id": 4,
-      "name": "leche en polvo",
-      "precio": "1500",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripcion elite. Ipsum, assumed!",
-      "stock":1
+      "id": 11,
+      "name": "Beef - Tongue, Fresh",
+      "price": "425.85",
+      "description": "Displ transverse fx r patella, 7thQ",
+      "stock": 76,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
     },
     {
-      "id": 5,
-      "name": "azúcar",
-      "precio": "3000",
-      "descripcion": "Lorem ipsum dolor sit amex consenter descripción elite. Ipsum, assumed!",
-      "stock":0
+      "id": 12,
+      "name": "Spinach - Baby",
+      "price": "651.27",
+      "description": "Lacerat less saphenous at lower leg level, left leg, init",
+      "stock": 85,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 13,
+      "name": "Yogurt - Strawberry, 175 Gr",
+      "price": "897.76",
+      "description": "Embolism due to internal orthopedic prosth dev/grft, init",
+      "stock": 43,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 14,
+      "name": "Juice - Ocean Spray Cranberry",
+      "price": "785.30",
+      "description": "Primary open-angle glaucoma, bilateral, indeterminate stage",
+      "stock": 99,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 15,
+      "name": "Pastry - Apple Large",
+      "price": "645.42",
+      "description": "Drown after fall into bathtub, undetermined intent",
+      "stock": 86,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 16,
+      "name": "Oil - Grapeseed Oil",
+      "price": "733.09",
+      "description": "Unsp fx shaft of left tibia, subs for clos fx w delay heal",
+      "stock": 83,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 17,
+      "name": "True - Vue Containers",
+      "price": "888.17",
+      "description": "Primary open-angle glaucoma, right eye, severe stage",
+      "stock": 89,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 18,
+      "name": "Chicken Breast Wing On",
+      "price": "150.99",
+      "description": "Displ spiral fx shaft of ulna, r arm, 7thN",
+      "stock": 5,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 19,
+      "name": "Soap - Hand Soap",
+      "price": "173.67",
+      "description": "Fracture of orbital floor, left side",
+      "stock": 93,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 20,
+      "name": "Wine - Coteaux Du Tricastin Ac",
+      "price": "86.18",
+      "description": "Poisoning by other bacterial vaccines, assault, init encntr",
+      "stock": 68,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 21,
+      "name": "Godiva White Chocolate",
+      "price": "100.13",
+      "description": "Drug-induced gout, unspecified site",
+      "stock": 25,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 22,
+      "name": "Longos - Greek Salad",
+      "price": "456.28",
+      "description": "Injury of peroneal nerve at lower leg level, left leg",
+      "stock": 6,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 23,
+      "name": "Tuna - Bluefin",
+      "price": "180.15",
+      "description": "Other superficial bite of hand of right hand, init encntr",
+      "stock": 19,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 24,
+      "name": "Extract - Vanilla,artificial",
+      "price": "465.46",
+      "description": "Underdosing of antimycobacterial drugs, initial encounter",
+      "stock": 28,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 25,
+      "name": "Evaporated Milk - Skim",
+      "price": "365.89",
+      "description": "Puncture wound with foreign body of unsp wrist, init encntr",
+      "stock": 34,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 26,
+      "name": "Truffle - Peelings",
+      "price": "362.79",
+      "description": "Unsp fracture of second metacarpal bone, left hand, sequela",
+      "stock": 8,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 27,
+      "name": "Cornish Hen",
+      "price": "931.52",
+      "description": "Unsp fracture of lower end of unspecified ulna, sequela",
+      "stock": 11,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 28,
+      "name": "Cups 10oz Trans",
+      "price": "105.42",
+      "description": "Mild vaginal dysplasia",
+      "stock": 49,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 29,
+      "name": "Taro Root",
+      "price": "127.32",
+      "description": "Traumatic rupture of left ulnar collateral ligament, sequela",
+      "stock": 49,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 30,
+      "name": "Cheese - Manchego, Spanish",
+      "price": "934.16",
+      "description": "Frostbite w tissue necrosis of left hip and thigh, init",
+      "stock": 11,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 31,
+      "name": "Wine - Mas Chicet Rose, Vintage",
+      "price": "597.64",
+      "description": "Displaced apophyseal fracture of unspecified femur",
+      "stock": 25,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 32,
+      "name": "Truffle Cups - White Paper",
+      "price": "511.71",
+      "description": "Nondisp oblique fx shaft of r tibia, 7thM",
+      "stock": 42,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 33,
+      "name": "Wine - Cava Aria Estate Brut",
+      "price": "145.14",
+      "description": "Twin pregnancy, dichorionic/diamniotic, third trimester",
+      "stock": 52,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 34,
+      "name": "Flower - Dish Garden",
+      "price": "361.26",
+      "description": "Zoster iridocyclitis",
+      "stock": 6,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 35,
+      "name": "Rice - Wild",
+      "price": "884.00",
+      "description": "Oth cause of accidental non-transport drown",
+      "stock": 9,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 36,
+      "name": "Salad Dressing",
+      "price": "398.10",
+      "description": "Displ seg fx shaft of r fibula, 7thD",
+      "stock": 47,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 37,
+      "name": "Chicken - Leg / Back Attach",
+      "price": "200.18",
+      "description": "Nondisp fx of coronoid pro of unsp ulna, 7thH",
+      "stock": 81,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 38,
+      "name": "Flour - Rye",
+      "price": "23.65",
+      "description": "Corros first deg of shldr/up lmb, ex wrs/hnd unsp site, sqla",
+      "stock": 27,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 39,
+      "name": "Plastic Wrap",
+      "price": "492.35",
+      "description": "Toxic effect of ketones, undetermined, subsequent encounter",
+      "stock": 53,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 40,
+      "name": "Pork - Bacon,back Peameal",
+      "price": "5.77",
+      "description": "Fracture of distal phalanx of lesser toe(s)",
+      "stock": 34,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 41,
+      "name": "Soup - Chicken And Wild Rice",
+      "price": "21.96",
+      "description": "Hit by falling object due to accident to sailboat, subs",
+      "stock": 24,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 42,
+      "name": "Soup - Campbells - Chicken Noodle",
+      "price": "18.46",
+      "description": "Dementia in oth diseases classd elswhr w/o behavrl disturb",
+      "stock": 13,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 43,
+      "name": "Chocolate - Mi - Amere Semi",
+      "price": "77.81",
+      "description": "Unsp inj musc/tend peroneal grp at low leg lev,unsp leg,sqla",
+      "stock": 5,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 44,
+      "name": "Cookie Dough - Chocolate Chip",
+      "price": "482.43",
+      "description": "Displ transverse fx shaft of l tibia, 7thJ",
+      "stock": 54,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 45,
+      "name": "Cup Translucent 9 Oz",
+      "price": "853.99",
+      "description": "Unsp open wound of l mid finger w/o damage to nail, init",
+      "stock": 30,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 46,
+      "name": "Oil - Safflower",
+      "price": "818.78",
+      "description": "Puncture wound without foreign body of right hand",
+      "stock": 67,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 47,
+      "name": "Barley - Pearl",
+      "price": "6.42",
+      "description": "Burn 2nd deg of unsp site left lower limb, ex ank/ft, subs",
+      "stock": 41,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 48,
+      "name": "Island Oasis - Peach Daiquiri",
+      "price": "656.70",
+      "description": "Burn of unspecified degree of left knee, subs encntr",
+      "stock": 6,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 49,
+      "name": "Truffle - Whole Black Peeled",
+      "price": "601.95",
+      "description": "Crushed by nonvenomous snake, subsequent encounter",
+      "stock": 87,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 50,
+      "name": "Rice - Long Grain",
+      "price": "233.60",
+      "description": "Pedl cyc driver inj pick-up truck, pk-up/van nontraf, init",
+      "stock": 83,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 51,
+      "name": "Salt - Rock, Course",
+      "price": "570.91",
+      "description": "Erosion of implanted urtl bulk agnt organ or tissue, sequela",
+      "stock": 3,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 52,
+      "name": "Flour - So Mix Cake White",
+      "price": "252.39",
+      "description": "Subluxation of C1/C2 cervical vertebrae, sequela",
+      "stock": 55,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 53,
+      "name": "Wine - White, French Cross",
+      "price": "358.74",
+      "description": "Poisoning by oth antipsychot/neurolept, accidental",
+      "stock": 78,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 54,
+      "name": "Duck - Breast",
+      "price": "502.10",
+      "description": "Blister (nonthermal), right lesser toe(s)",
+      "stock": 26,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 55,
+      "name": "Cocoa Powder - Natural",
+      "price": "215.96",
+      "description": "Osteitis deformans in neoplastic diseases, right ank/ft",
+      "stock": 68,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 56,
+      "name": "Yogurt - French Vanilla",
+      "price": "652.13",
+      "description": "Occup of hv veh inj in clsn w nonmtr vehicle nontraf, subs",
+      "stock": 3,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 57,
+      "name": "Sea Bass - Fillets",
+      "price": "43.58",
+      "description": "Burn of first degree of unspecified thumb (nail), sequela",
+      "stock": 54,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 58,
+      "name": "Shortbread - Cookie Crumbs",
+      "price": "362.60",
+      "description": "Viral infection, unspecified",
+      "stock": 2,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 59,
+      "name": "Glycerine",
+      "price": "466.34",
+      "description": "Laceration w/o fb of right eyelid and periocular area, init",
+      "stock": 61,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 60,
+      "name": "Coffee - 10oz Cup 92961",
+      "price": "416.90",
+      "description": "Acute megakaryoblastic leukemia, in remission",
+      "stock": 98,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 61,
+      "name": "Garlic - Elephant",
+      "price": "61.48",
+      "description": "Exposure to melting of plastic jewelry",
+      "stock": 43,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 62,
+      "name": "Lettuce - Lolla Rosa",
+      "price": "539.06",
+      "description": "Nondisp oblique fx shaft of unsp femr, 7thP",
+      "stock": 47,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 63,
+      "name": "Container Clear 8 Oz",
+      "price": "159.95",
+      "description": "Adult osteochondrosis of spine, multiple sites in spine",
+      "stock": 19,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 64,
+      "name": "Tart - Pecan Butter Squares",
+      "price": "20.98",
+      "description": "Macroglossia",
+      "stock": 97,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 65,
+      "name": "Bread Crumbs - Panko",
+      "price": "501.07",
+      "description": "Physeal fracture of lower end of tibia",
+      "stock": 26,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 66,
+      "name": "Chervil - Fresh",
+      "price": "704.87",
+      "description": "Nondisp fx of greater trochanter of r femr, 7thD",
+      "stock": 63,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 67,
+      "name": "Plums - Red",
+      "price": "225.80",
+      "description": "Nondisp fx of med condyle of unsp tibia, 7thR",
+      "stock": 51,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 68,
+      "name": "Nestea - Iced Tea",
+      "price": "383.22",
+      "description": "Burn of internal genitourinary organs, subsequent encounter",
+      "stock": 38,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 69,
+      "name": "Cake - Night And Day Choclate",
+      "price": "225.44",
+      "description": "Other microdeletions",
+      "stock": 58,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 70,
+      "name": "Bagel - Whole White Sesame",
+      "price": "53.05",
+      "description": "Unsp inj unsp musc/fasc/tend at thi lev, left thigh, init",
+      "stock": 29,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 71,
+      "name": "Pork - Liver",
+      "price": "226.51",
+      "description": "Inj prph nerve(s) at abd, low back and pelvis level, init",
+      "stock": 27,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 72,
+      "name": "Wine - Two Oceans Sauvignon",
+      "price": "795.67",
+      "description": "Bitten by mouse",
+      "stock": 1,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 73,
+      "name": "Pike - Frozen Fillet",
+      "price": "131.61",
+      "description": "Nondisp artic fx head of l femr, 7thN",
+      "stock": 20,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 74,
+      "name": "Saskatoon Berries - Frozen",
+      "price": "71.21",
+      "description": "Exocrine pancreatic insufficiency",
+      "stock": 10,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 75,
+      "name": "Compound - Rum",
+      "price": "686.17",
+      "description": "Choroidal degeneration, unspecified, unspecified eye",
+      "stock": 30,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 76,
+      "name": "Island Oasis - Pina Colada",
+      "price": "665.58",
+      "description": "Acute gastritis with bleeding",
+      "stock": 25,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 77,
+      "name": "Tea - Lemon Green Tea",
+      "price": "546.71",
+      "description": "Partial loss of teeth due to caries, unspecified class",
+      "stock": 25,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 78,
+      "name": "Bok Choy - Baby",
+      "price": "42.34",
+      "description": "Poisoning by calcium-channel blockers, accidental, init",
+      "stock": 89,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 79,
+      "name": "Pie Box - Cello Window 2.5",
+      "price": "763.80",
+      "description": "Jump/div from boat striking water surface causing oth injury",
+      "stock": 100,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 80,
+      "name": "Sprouts - Brussel",
+      "price": "595.02",
+      "description": "Sltr-haris Type I physl fx low end humer, l arm, 7thG",
+      "stock": 90,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 81,
+      "name": "Corn Meal",
+      "price": "301.86",
+      "description": "Toxic effect of unspecified metal, assault, subs encntr",
+      "stock": 2,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 82,
+      "name": "Bread - Multigrain, Loaf",
+      "price": "474.08",
+      "description": "Unspecified fracture of sacrum, sequela",
+      "stock": 33,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 83,
+      "name": "Green Scrubbie Pad H.duty",
+      "price": "891.59",
+      "description": "Fall into other water striking wall",
+      "stock": 32,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 84,
+      "name": "Bread Ww Cluster",
+      "price": "818.09",
+      "description": "Balanced sex/autosomal rearrangement in abnormal individual",
+      "stock": 78,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 85,
+      "name": "Glove - Cutting",
+      "price": "375.54",
+      "description": "Dislocation of proximal interphaln joint of finger, sequela",
+      "stock": 63,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 86,
+      "name": "Olives - Green, Pitted",
+      "price": "357.93",
+      "description": "Moderate laceration of kidney",
+      "stock": 85,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 87,
+      "name": "Mushroom - Shitake, Dry",
+      "price": "409.38",
+      "description": "Other and unspecified ventral hernia with gangrene",
+      "stock": 47,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 88,
+      "name": "Tomatoes - Vine Ripe, Yellow",
+      "price": "662.58",
+      "description": "Cutan T-cell lymphoma, unsp nodes of head, face, and neck",
+      "stock": 36,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 89,
+      "name": "Pasta - Angel Hair",
+      "price": "690.10",
+      "description": "Displ pilon fx l tibia, 7thE",
+      "stock": 69,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 90,
+      "name": "Butter Balls Salted",
+      "price": "779.28",
+      "description": "Age-rel osteopor w current path fracture, left hand, sequela",
+      "stock": 14,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 91,
+      "name": "Yogurt - Assorted Pack",
+      "price": "838.57",
+      "description": "Partial traumatic amp of unsp hip and thigh, level unsp",
+      "stock": 49,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 92,
+      "name": "Wine - Chablis J Moreau Et Fils",
+      "price": "469.52",
+      "description": "Other specified injuries of left shoulder and upper arm",
+      "stock": 4,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 93,
+      "name": "Soup - Tomato Mush. Florentine",
+      "price": "583.30",
+      "description": "Oth respiratory conditions origin in the perinatal period",
+      "stock": 94,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 94,
+      "name": "Trout Rainbow Whole",
+      "price": "824.80",
+      "description": "Blister (nonthermal) of lower back and pelvis",
+      "stock": 2,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 95,
+      "name": "Appetizer - Chicken Satay",
+      "price": "128.63",
+      "description": "Driver of hv veh inj in clsn w rail trn/veh nontraf, init",
+      "stock": 33,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 96,
+      "name": "Appetizer - Shrimp Puff",
+      "price": "865.77",
+      "description": "Implant cysts of iris, ciliary body or ant chamber, left eye",
+      "stock": 64,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 97,
+      "name": "Wine - Rosso Del Veronese Igt",
+      "price": "574.16",
+      "description": "Cardiomyopathy in diseases classified elsewhere",
+      "stock": 45,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 98,
+      "name": "Mix - Cappucino Cocktail",
+      "price": "906.05",
+      "description": "Fx unsp phalanx of l rng fngr, subs for fx w delay heal",
+      "stock": 83,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 99,
+      "name": "Soup - Boston Clam Chowder",
+      "price": "464.02",
+      "description": "Smoking (tobacco) complicating pregnancy, unsp trimester",
+      "stock": 57,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 100,
+      "name": "Beans - Black Bean, Dry",
+      "price": "309.72",
+      "description": "Pedal cycle driver injured in collision w ped/anml nontraf",
+      "stock": 75,
+      "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 200,
+      "name": "nuevo producto",
+      "price": "1000",
+      "description": "nuevo producto",
+      "stock": "50",
+      "currency_code": "usd",
+      "date": "24/09/2021"
     }
   ]
 }
