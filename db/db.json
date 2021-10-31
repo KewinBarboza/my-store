@@ -1,15 +1,6 @@
 {
   "productos": [
     {
-      "id": 8,
-      "name": "Oven Mitts - 15 Inch",
-      "price": "287.94",
-      "description": "Sprain of other specified parts of right shoulder girdle",
-      "stock": 74,
-      "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
       "id": 9,
       "name": "Beef - Ground Lean Fresh",
       "price": "503.93",
@@ -835,15 +826,6 @@
       "description": "Pedal cycle driver injured in collision w ped/anml nontraf",
       "stock": 75,
       "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
-      "id": 200,
-      "name": "nuevo producto",
-      "price": "1000",
-      "description": "nuevo producto",
-      "stock": "50",
-      "currency_code": "usd",
       "date": "24/09/2021"
     }
   ]

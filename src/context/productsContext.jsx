@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react'
-import { fetchProducts } from './../services/products'
+import { fetchProducts, serviceSaveProduct, serviceDeleteProduct } from './../services/products'
 export const ProductsContext = createContext()
 
 export const ProductsProvider = ({ children }) => {
@@ -20,15 +20,7 @@ export const ProductsProvider = ({ children }) => {
 
   const deleteProduct = async (id) => {
     setLoading(true)
-    await window.fetch(`http://localhost:4000/productos/${id}`,
-      {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }
-    )
-
+    await serviceDeleteProduct(id)
     const deleteProduct = products.filter(p => p.id !== id)
     setProducts(deleteProduct)
     setLoading(false)
@@ -36,24 +28,7 @@ export const ProductsProvider = ({ children }) => {
 
   const saveProduct = async (product) => {
     setLoading(true)
-    const res = await window.fetch('http://localhost:4000/productos',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          id: 200,
-          name: product.name,
-          price: product.price,
-          description: product.description,
-          stock: product.stock,
-          currency_code: product.currency_code,
-          date: '24/09/2021'
-        })
-      }
-    )
-
+    const res = await serviceSaveProduct(product)
     const dataRes = await res.json()
     setProducts([...products, dataRes])
     setLoading(false)
