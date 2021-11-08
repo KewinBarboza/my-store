@@ -6,7 +6,13 @@ export const fetchProducts = async () => {
       return { data, error: null }
     }
 
-    return { data: [], error: { status: res.status, message: 'ah ocurrido un error cargando los productos.' } }
+    return {
+      data: null,
+      error: {
+        status: res.status,
+        message: 'ah ocurrido un error cargando los productos.'
+      }
+    }
   } catch (error) {
     console.log(error)
   }
@@ -31,19 +37,60 @@ export const serviceSaveProduct = async (product) => {
         })
       }
     )
-    return res
+    if (res.ok) {
+      const data = await res.json()
+      return {
+        data,
+        success: {
+          status: res.status,
+          message: 'producto guardado con exito.'
+        },
+        error: null
+      }
+    }
+
+    return {
+      data: [],
+      success: null,
+      error: {
+        status: res.status,
+        message: 'ah ocurrido un error guardando el producto intente de nuevo mas tarde.'
+      }
+    }
   } catch (error) {
     console.log(error)
   }
 }
 
 export const serviceDeleteProduct = async (id) => {
-  await window.fetch(`http://localhost:4000/productos/${id}`,
-    {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json'
+  try {
+    const res = await window.fetch(`http://localhost:4000/productos/${id}`,
+      {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+
+    if (res.ok) {
+      return {
+        success: {
+          status: res.status,
+          message: 'producto eliminado con exito.'
+        },
+        error: null
       }
     }
-  )
+
+    return {
+      success: null,
+      error: {
+        status: res.status,
+        message: 'ah ocurrido un error eliminando el producto intente de nuevo mas tarde.'
+      }
+    }
+  } catch (error) {
+    console.log(error)
+  }
 }

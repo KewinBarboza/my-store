@@ -14,13 +14,14 @@ export const ProductsProvider = ({ children }) => {
   const getProducts = async () => {
     setLoading(true)
     const product = await fetchProducts()
-    product.data.length > 0 ? setProducts(product.data) : setError(product.error)
+    product ? setProducts(product.data) : setError(product.error)
     setLoading(false)
   }
 
   const deleteProduct = async (id) => {
     setLoading(true)
-    await serviceDeleteProduct(id)
+    const res = await serviceDeleteProduct(id)
+    console.log(res)
     const deleteProduct = products.filter(p => p.id !== id)
     setProducts(deleteProduct)
     setLoading(false)
@@ -29,10 +30,14 @@ export const ProductsProvider = ({ children }) => {
   const saveProduct = async (product) => {
     setLoading(true)
     const res = await serviceSaveProduct(product)
-    const dataRes = await res.json()
+    const dataRes = await res.data
     setProducts([...products, dataRes])
     setLoading(false)
   }
 
-  return <ProductsContext.Provider value={{ products, error, loading, deleteProduct, saveProduct }}>{children}</ProductsContext.Provider>
+  return (
+    <ProductsContext.Provider value={{ products, error, loading, deleteProduct, saveProduct }}>
+      {children}
+    </ProductsContext.Provider>
+  )
 }

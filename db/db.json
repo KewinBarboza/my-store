@@ -1,51 +1,6 @@
 {
   "productos": [
     {
-      "id": 9,
-      "name": "Beef - Ground Lean Fresh",
-      "price": "503.93",
-      "description": "Infection and inflammatory reaction due to insulin pump",
-      "stock": 25,
-      "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
-      "id": 10,
-      "name": "Crab - Dungeness, Whole, live",
-      "price": "537.61",
-      "description": "Drown due to being washed overboard from inflatbl crft, init",
-      "stock": 74,
-      "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
-      "id": 11,
-      "name": "Beef - Tongue, Fresh",
-      "price": "425.85",
-      "description": "Displ transverse fx r patella, 7thQ",
-      "stock": 76,
-      "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
-      "id": 12,
-      "name": "Spinach - Baby",
-      "price": "651.27",
-      "description": "Lacerat less saphenous at lower leg level, left leg, init",
-      "stock": 85,
-      "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
-      "id": 13,
-      "name": "Yogurt - Strawberry, 175 Gr",
-      "price": "897.76",
-      "description": "Embolism due to internal orthopedic prosth dev/grft, init",
-      "stock": 43,
-      "currency_code": "Bs",
-      "date": "24/09/2021"
-    },
-    {
       "id": 14,
       "name": "Juice - Ocean Spray Cranberry",
       "price": "785.30",
@@ -826,6 +781,15 @@
       "description": "Pedal cycle driver injured in collision w ped/anml nontraf",
       "stock": 75,
       "currency_code": "Bs",
+      "date": "24/09/2021"
+    },
+    {
+      "id": 200,
+      "name": "prueb",
+      "price": "prue",
+      "description": "www",
+      "stock": "qq",
+      "currency_code": "ww",
       "date": "24/09/2021"
     }
   ]
