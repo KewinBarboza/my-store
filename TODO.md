@@ -1,7 +1,14 @@
-# crear layaut
-# validar servicios
-# mostar mensajes 
-# editar pruducto
-# diseño de listar producto
-# diseño del formulario
-# crear base de datos en firabase
+<!-- utilidades -->
+# mostrar alertas
+
+<!-- modulo de productos -->
+# fixed crear producto
+# editar productos
+# consultar productos recientes
+# paginacion
+
+<!-- modulo de ventas -->
+# registrar ventas
+  <!-- clientes -->
+  # registrar clientes
+  # asignar productos a clientes

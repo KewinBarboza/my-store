@@ -1,6 +1,15 @@
+import { v4 as uuid } from 'uuid'
+const SERVICES = {
+  PRODUCT: 'http://localhost:4000/productos'
+}
+
+const headers = {
+  'Content-Type': 'application/json'
+}
+
 export const fetchProducts = async () => {
   try {
-    const res = await window.fetch('http://localhost:4000/productos')
+    const res = await window.fetch(SERVICES.PRODUCT)
     if (res.ok) {
       const data = await res.json()
       return { data, error: null }
@@ -14,26 +23,33 @@ export const fetchProducts = async () => {
       }
     }
   } catch (error) {
-    console.log(error)
+    return {
+      data: null,
+      error: {
+        status: null,
+        message: error.message
+      }
+    }
   }
 }
 
 export const serviceSaveProduct = async (product) => {
   try {
-    const res = await window.fetch('http://localhost:4000/productos',
+    const event = new Date()
+    const options = { dateStyle: 'short' }
+    const date = event.toLocaleString('en', options)
+    const res = await window.fetch(SERVICES.PRODUCT,
       {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers,
         body: JSON.stringify({
-          id: 200,
+          id: uuid(),
           name: product.name,
           price: product.price,
           description: product.description,
           stock: product.stock,
           currency_code: product.currency_code,
-          date: '24/09/2021'
+          date
         })
       }
     )
@@ -58,18 +74,22 @@ export const serviceSaveProduct = async (product) => {
       }
     }
   } catch (error) {
-    console.log(error)
+    return {
+      data: null,
+      error: {
+        status: null,
+        message: error.message
+      }
+    }
   }
 }
 
 export const serviceDeleteProduct = async (id) => {
   try {
-    const res = await window.fetch(`http://localhost:4000/productos/${id}`,
+    const res = await window.fetch(`${SERVICES.PRODUCT}/${id}`,
       {
         method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json'
-        }
+        headers
       }
     )
 
@@ -91,6 +111,12 @@ export const serviceDeleteProduct = async (id) => {
       }
     }
   } catch (error) {
-    console.log(error)
+    return {
+      success: null,
+      error: {
+        status: error,
+        message: error.message
+      }
+    }
   }
 }

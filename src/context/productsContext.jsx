@@ -2,10 +2,14 @@ import React, { createContext, useState, useEffect } from 'react'
 import { fetchProducts, serviceSaveProduct, serviceDeleteProduct } from './../services/products'
 export const ProductsContext = createContext()
 
+const PRODUCTS_INITIAL_VALUE = {
+  data: [],
+  error: null,
+  success: null
+}
 export const ProductsProvider = ({ children }) => {
-  const [products, setProducts] = useState(null)
-  const [error, setError] = useState(null)
-  const [loading, setLoading] = useState(false)
+  const [products, setProducts] = useState(PRODUCTS_INITIAL_VALUE)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     getProducts()
@@ -14,15 +18,34 @@ export const ProductsProvider = ({ children }) => {
   const getProducts = async () => {
     setLoading(true)
     const product = await fetchProducts()
-    product ? setProducts(product.data) : setError(product.error)
+    setProducts(product)
     setLoading(false)
   }
 
   const deleteProduct = async (id) => {
     setLoading(true)
+    let deleteProduct = {}
     const res = await serviceDeleteProduct(id)
-    console.log(res)
-    const deleteProduct = products.filter(p => p.id !== id)
+
+    if (res.success) {
+      deleteProduct = {
+        data: products.data.filter(p => p.id !== id),
+        error: null,
+        success: res.success.message
+      }
+    }
+
+    if (res.error) {
+      deleteProduct = {
+        data: products.data,
+        error: {
+          message: res.error.message,
+          status: res.error.status
+        },
+        success: null
+      }
+    }
+
     setProducts(deleteProduct)
     setLoading(false)
   }
@@ -36,7 +59,7 @@ export const ProductsProvider = ({ children }) => {
   }
 
   return (
-    <ProductsContext.Provider value={{ products, error, loading, deleteProduct, saveProduct }}>
+    <ProductsContext.Provider value={{ products, loading, deleteProduct, saveProduct }}>
       {children}
     </ProductsContext.Provider>
   )
