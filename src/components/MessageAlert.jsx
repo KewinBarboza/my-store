@@ -1,14 +1,21 @@
-import React from 'react'
-import { Alert, AlertIcon, CloseButton, AlertDescription } from '@chakra-ui/react'
+import React, { useState, useEffect } from 'react'
+import { Alert, AlertIcon, AlertDescription, AlertTitle } from '@chakra-ui/react'
 
 export default function MessageAlert ({ message = null, status = null, typeError = 'success' }) {
-  !message && console.error('el mensaje es requerido')
+  if (message === null) return <></>
+  const [time, setTime] = useState(true)
 
-  return (
-    <Alert status="typeError">
+  useEffect(() => {
+    setTimeout(() => {
+      setTime(false)
+    }, 4000)
+  }, [])
+
+  return <>
+    {time && <Alert status={typeError} variant="left-accent" position="absolute" top="8px" right="8px" zIndex="2" width="auto">
       <AlertIcon />
-      <AlertDescription>{message} {status && <p>{status}</p>}</AlertDescription>
-      <CloseButton position="absolute" right="8px" top="8px" />
-    </Alert>
-  )
+      <AlertTitle>{status && <p>status {status}</p>}</AlertTitle>
+      <AlertDescription display="block"> {message}</AlertDescription>
+    </Alert>}
+  </>
 }
