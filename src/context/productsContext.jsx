@@ -23,7 +23,6 @@ export const ProductsProvider = ({ children }) => {
   }
 
   const deleteProduct = async (id) => {
-    setLoading(true)
     let deleteProduct = {}
     const res = await serviceDeleteProduct(id)
 
@@ -31,7 +30,10 @@ export const ProductsProvider = ({ children }) => {
       deleteProduct = {
         data: products.data.filter(p => p.id !== id),
         error: null,
-        success: res.success.message
+        success: {
+          message: res.success.message,
+          status: null
+        }
       }
     }
 
@@ -47,14 +49,19 @@ export const ProductsProvider = ({ children }) => {
     }
 
     setProducts(deleteProduct)
-    setLoading(false)
   }
 
   const saveProduct = async (product) => {
     setLoading(true)
     const res = await serviceSaveProduct(product)
-    const dataRes = await res.data
-    setProducts([...products, dataRes])
+
+    if (res.success) {
+      setProducts({ data: [...products.data, res.data], error: null, success: res.success })
+      setLoading(false)
+      return
+    }
+
+    setProducts({ ...products, error: res.error, success: null })
     setLoading(false)
   }
 

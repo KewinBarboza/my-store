@@ -70,7 +70,7 @@ export const serviceSaveProduct = async (product) => {
       success: null,
       error: {
         status: res.status,
-        message: 'ah ocurrido un error guardando el producto intente de nuevo mas tarde.'
+        message: 'ah ocurrido un error intente de nuevo.'
       }
     }
   } catch (error) {
@@ -96,7 +96,7 @@ export const serviceDeleteProduct = async (id) => {
     if (res.ok) {
       return {
         success: {
-          status: res.status,
+          status: `status ${res.status}`,
           message: 'producto eliminado con exito.'
         },
         error: null
@@ -106,8 +106,8 @@ export const serviceDeleteProduct = async (id) => {
     return {
       success: null,
       error: {
-        status: res.status,
-        message: 'ah ocurrido un error eliminando el producto intente de nuevo mas tarde.'
+        status: `status ${res.status}`,
+        message: 'ah ocurrido un error intente de nuevo.'
       }
     }
   } catch (error) {

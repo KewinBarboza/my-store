@@ -1,11 +1,11 @@
 <!-- utilidades -->
-# mostrar alertas
+# mostrar alertas con animacion
 
 <!-- modulo de productos -->
-# fixed crear producto
 # editar productos
 # consultar productos recientes
 # paginacion
+# guardar productos en cache
 
 <!-- modulo de ventas -->
 # registrar ventas
