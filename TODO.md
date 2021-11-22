@@ -4,7 +4,7 @@
 <!-- modulo de productos -->
 # editar productos
 # consultar productos recientes
-# paginacion
+# pagination
 # guardar productos en cache
 
 <!-- modulo de ventas -->

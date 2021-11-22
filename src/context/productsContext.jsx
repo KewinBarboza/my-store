@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react'
-import { fetchProducts, serviceSaveProduct, serviceDeleteProduct } from './../services/products'
+import { fetchProducts, serviceSaveProduct, serviceDeleteProduct, serviceEditProduct } from './../services/products'
 export const ProductsContext = createContext()
 
 const PRODUCTS_INITIAL_VALUE = {
@@ -65,8 +65,12 @@ export const ProductsProvider = ({ children }) => {
     setLoading(false)
   }
 
+  const editProduct = async (id) => {
+    serviceEditProduct(id)
+  }
+
   return (
-    <ProductsContext.Provider value={{ products, loading, deleteProduct, saveProduct }}>
+    <ProductsContext.Provider value={{ products, loading, deleteProduct, saveProduct, editProduct }}>
       {children}
     </ProductsContext.Provider>
   )

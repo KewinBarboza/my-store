@@ -120,3 +120,7 @@ export const serviceDeleteProduct = async (id) => {
     }
   }
 }
+
+export const serviceEditProduct = async (product) => {
+  console.log(product)
+}
